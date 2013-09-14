@@ -8,7 +8,14 @@ import javax.inject.Singleton
 abstract class TextGenerator(val welcomeText: String)
 
 /**
- * A simple implementation of TextGenerator that we will inject.
+ * A simple implementation of TextGenerator that we will inject.  This is what will be used for production
  */
 @Singleton
 class WelcomeTextGenerator extends TextGenerator("Your new application is ready.")
+
+
+/**
+ * A simple implementation of TextGenerator that we will inject.   This is used for development
+ */
+@Singleton
+class DevTextGenerator extends TextGenerator("Dev Text is ready.")

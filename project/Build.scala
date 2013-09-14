@@ -9,6 +9,7 @@ object ApplicationBuild extends Build {
 
   val appDependencies = Seq(
     "com.google.inject" % "guice" % "3.0",
+    "com.tzavellas" % "sse-guice" % "0.7.1",
     "javax.inject" % "javax.inject" % "1",
 
     "org.mockito" % "mockito-core" % "1.9.5" % "test"
